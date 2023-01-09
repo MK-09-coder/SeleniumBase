@@ -1,0 +1,47 @@
+test_payment.py::ContactTest::test_contact_page
+--------------------------------------------------------------------
+Last Page: [WARNING! Browser Not Open!]
+ Duration: 223.05s
+  Browser: Chrome 108.0.5359.124
+   Driver: chromedriver 108.0.5359.71
+Timestamp: 1673239692  (Unix Timestamp)
+     Date: Monday, 9 January 2023
+     Time: 10:18:12 AM  (IST, UTC+05:30)
+--------------------------------------------------------------------
+Traceback: File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/mananjaykumar/PycharmProjects/selenium/tests/test_payment.py", line 5, in test_contact_page
+    self.open("restaurantapp-c2ed6.firebaseapp.com")
+  File "/Users/mananjaykumar/PycharmProjects/selenium/venv/lib/python3.10/site-packages/seleniumbase/fixtures/base_case.py", line 255, in open
+    if self.driver.current_url == pre_action_url and pre_action_url != url:
+  File "/Users/mananjaykumar/PycharmProjects/selenium/venv/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 538, in current_url
+    return self.execute(Command.GET_CURRENT_URL)["value"]
+  File "/Users/mananjaykumar/PycharmProjects/selenium/venv/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 444, in execute
+    self.error_handler.check_response(response)
+  File "/Users/mananjaykumar/PycharmProjects/selenium/venv/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 249, in check_response
+    raise exception_class(message, screen, stacktrace)
+Exception: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=108.0.5359.124)
+Stacktrace:
+0   chromedriver                        0x00000001091faf38 chromedriver + 4910904
+1   chromedriver                        0x000000010917aa03 chromedriver + 4385283
+2   chromedriver                        0x0000000108dbf747 chromedriver + 472903
+3   chromedriver                        0x0000000108d95ff5 chromedriver + 303093
+4   chromedriver                        0x0000000108e2eb0f chromedriver + 928527
+5   chromedriver                        0x0000000108e44763 chromedriver + 1017699
+6   chromedriver                        0x0000000108e29ee3 chromedriver + 909027
+7   chromedriver                        0x0000000108df430c chromedriver + 688908
+8   chromedriver                        0x0000000108df588e chromedriver + 694414
+9   chromedriver                        0x00000001091c81de chromedriver + 4702686
+10  chromedriver                        0x00000001091ccb19 chromedriver + 4721433
+11  chromedriver                        0x00000001091d428e chromedriver + 4752014
+12  chromedriver                        0x00000001091cd91a chromedriver + 4725018
+13  chromedriver                        0x00000001091a1b02 chromedriver + 4545282
+14  chromedriver                        0x00000001091ec888 chromedriver + 4851848
+15  chromedriver                        0x00000001091eca05 chromedriver + 4852229
+16  chromedriver                        0x0000000109202e5f chromedriver + 4943455
+17  libsystem_pthread.dylib             0x00007ff8152324e1 _pthread_start + 125
+18  libsystem_pthread.dylib             0x00007ff81522df6b thread_start + 15
